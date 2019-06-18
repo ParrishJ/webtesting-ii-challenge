@@ -13,15 +13,15 @@ class Dashboard extends Component {
         }
     }
     strikeHandler = () => {
-        if (this.state.strike < 3) {
+        if (this.state.strike < 2) {
             this.setState({ strike: this.state.strike + 1 })
-        } if (this.state.strike >= 3) {
+        } if (this.state.strike >= 2) {
             this.setState({ strike: 0 })
         }
     }
 
     ballHandler = () => {
-        if (this.state.ball < 4) {
+        if (this.state.ball < 3) {
             this.setState({ ball: this.state.ball + 1 })
         } if (this.state.ball >= 3) {
             this.setState({ ball: 0 })
@@ -31,7 +31,7 @@ class Dashboard extends Component {
     foulHandler = () => {
         if (this.state.strike < 3) {
             this.setState({ strike: this.state.strike + 1 })
-        } if (this.state.strike >= 3) {
+        } if (this.state.strike >= 2) {
             this.setState({ strike: this.state.strike })
         }
     }
@@ -43,10 +43,10 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.strikeHandler}>strike</button>
-                <button onClick={this.ballHandler}>ball</button>
-                <button onClick={this.foulHandler}>foul</button>
-                <button onClick={this.hitHandler}>hit</button>
+                <button onClick={this.strikeHandler}>add strike</button>
+                <button onClick={this.ballHandler}>add ball</button>
+                <button onClick={this.foulHandler}>add foul</button>
+                <button onClick={this.hitHandler}>add hit</button>
                 <Display strike={this.state.strike} ball={this.state.ball} foul={this.state.foul} hit={this.state.hit} />
             </div>
         )

@@ -12,7 +12,6 @@ class Display extends Component {
             <div>
                 <h1>Strikes: {this.props.strike}</h1>
                 <h1>Balls: {this.props.ball}</h1>
-                <h1>Fouls: {this.props.foul}</h1>
                 <h1>Hits: {this.props.hit}</h1>
             </div>
         )

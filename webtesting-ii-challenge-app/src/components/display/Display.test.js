@@ -17,12 +17,6 @@ describe('<Display />', () => {
         getByText(/balls/i);
     });
 
-    it('Should display the word "fouls" ', () => {
-        const { getByText } = render(<Display />);
-
-        getByText(/fouls/i);
-    });
-
     it('Should display the word "hits" ', () => {
         const { getByText } = render(<Display />);
 
