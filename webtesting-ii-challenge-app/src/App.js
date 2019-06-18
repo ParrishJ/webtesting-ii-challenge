@@ -7,8 +7,7 @@ import Display from './components/display/Display'
 function App() {
   return (
     <div className="App">
-
-
+      <Dashboard />
     </div>
   );
 }
